@@ -4,6 +4,7 @@ import { Loader2 } from 'lucide-react'
 
 // Auth & types
 import { supabase, type User } from './lib/supabase'
+import { url } from './lib/url'
 
 // Employer-specific views
 import { CompanyProfileView } from './components/CompanyProfileView'
@@ -192,7 +193,7 @@ export default function App() {
         <div className="text-center">
           <div className="mb-8">
             <img
-              src="/talent_book_logo_draft_3 copy copy.png"
+              src={url('talent_book_logo_draft_3 copy copy.png')}
               alt="TalentBook Logo"
               className="h-16 w-auto mx-auto object-contain"
             />
@@ -223,7 +224,7 @@ export default function App() {
         <nav className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center space-x-3">
             <img
-              src="/talent_book_logo_draft_3 copy copy.png"
+              src={url('talent_book_logo_draft_3 copy copy.png')}
               alt="TalentBook Logo"
               className="h-10 w-auto object-contain"
             />

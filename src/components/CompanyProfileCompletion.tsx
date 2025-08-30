@@ -4,6 +4,7 @@ import { Button } from './ui/button'
 import { Label } from './ui/label'
 import { CountryCodeDropdown } from './ui/country-code-dropdown'
 import { supabase } from '../lib/supabase'
+import { url } from '../lib/url'
 
 interface SignupData {
   name: string
@@ -166,7 +167,7 @@ export function CompanyProfileCompletion({ signupData, onProfileComplete }: Comp
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 overflow-hidden">
             <img 
-              src="/talent book singular icon.png" 
+              src={url('talent book singular icon.png')}
               alt="TalentBook Icon" 
               className="w-full h-full object-contain"
             />
