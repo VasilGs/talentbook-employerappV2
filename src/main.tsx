@@ -4,11 +4,11 @@ import App from './App'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { BASE } from './lib/url'
+
+const root = document.getElementById('root')!
 const basename = BASE.replace(/\/$/, '')
-root.render(
+
+createRoot(root).render(
   <BrowserRouter basename={basename}>
     <App />
   </BrowserRouter>
-)
-const root = document.getElementById('root')!
-createRoot(root).render(<App />)
