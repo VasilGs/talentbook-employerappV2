@@ -1,0 +1,21 @@
+# netlify.toml (employer app)
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# По желание: ако някой отвори employerapp.netlify.app, пренасочи към /company
+[[redirects]]
+  from = "/"
+  to   = "/company"
+  status = 301
+
+# SPA fallback за всички client-side пътища под /company
+[[redirects]]
+  from = "/company"
+  to   = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/company/*"
+  to   = "/index.html"
+  status = 200
