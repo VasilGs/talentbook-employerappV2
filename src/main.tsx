@@ -12,3 +12,5 @@ createRoot(root).render(
   <BrowserRouter basename={basename}>
     <App />
   </BrowserRouter>
+
+)
